@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Details Management</title>
+  <link rel="stylesheet" href="assets/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/normalize_css.css">
+  <link rel="stylesheet" href="assets/css/orderDetailsStyles.css">
+</head>
+<body>
+<!--Navbar Start-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">PosSystem</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Item</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">OrderDetail</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search...">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--Navbar End-->
+<!--order Detail Management Table Start-->
+<section class="OrderDetails">
+  <h1 class="topic ">Order Details</h1>
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-striped table-hover mb-0" id="OrderDetailsTable">
+        <thead class="table-primary">
+        <tr>
+          <th scope="col">Order Id</th>
+          <th scope="col">Order Date</th>
+          <th scope="col">Customer Id</th>
+          <th scope="col">Total</th>
+          <th scope="col">Discount</th>
+          <th scope="col">Sub Total</th>
+          <th scope="col">Cash</th>
+          <th scope="col">Balance</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Sample row  -->
+        <tr>
+          <td>ORD001</td>
+          <td>2023-09-01</td>
+          <td>CS001</td>
+          <td>$19.99</td>
+          <td>5%</td>
+          <td>$14.99</td>
+          <td>$100.00</td>
+          <td>$85.00</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!--Order Management End-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
