@@ -63,8 +63,8 @@
 }
 
 #Order .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: rgba(26, 115, 232);
+    border-color: rgba(26, 115, 232);
 }
 
 #Order .btn-danger {
